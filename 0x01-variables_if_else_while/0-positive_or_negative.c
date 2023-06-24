@@ -2,6 +2,14 @@
 #include <time.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Description: Generates a random number and determines whether it is positive, negative, or zero.
+ * Prints the corresponding message.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
