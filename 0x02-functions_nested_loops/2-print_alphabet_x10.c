@@ -1,24 +1,26 @@
 #include "holberton.h"
+
 /**
-  * print_alphabet_x10- prints the alphabet 10x
-  *
-  * Return ()
-  *
-  */
+ * print_alphabet_x10 - prints alphabets 10
+ *
+ * Description: prints 10 times
+ * Return: Always(0).
+ */
+
 void print_alphabet_x10(void)
 {
-char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-int counter;
-int x;
+	int alphabet_count = 0;
 
-	while (x < 10)
+	while (alphabet_count < 10)
 	{
-		for (counter = 0; counter < 26; counter++)
+		char ch = 'a';
 
+		while (ch <= 'z')
 		{
-			_putchar(alphabet[counter]);
+			_putchar(ch);
+			ch++;
 		}
-	_putchar('\n');
-	x++;
+		alphabet_count++;
+		_putchar('\n');
 	}
 }

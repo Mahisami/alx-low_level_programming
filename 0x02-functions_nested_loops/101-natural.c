@@ -1,25 +1,33 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
-  * main - finds and prints multiples of 3 or 5 under 1024
-  *
-  * Return: void
-  *
-  *
-  */
+ * main - sums nultplies of 3 or 5
+ *
+ * Description: multiples between 0 and 1024
+ * Return: Always(0) Success
+ */
+
 int main(void)
 {
-	/* declarations */
-	int i;
-	int sum = 0;
+	int start_num, end_num, total;
 
-	for (i = 0; i < 1024; i++)
+	end_num = 1024;
+	total = 0;
+
+	for (start_num = 0; start_num < end_num; start_num++)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
+		if ((start_num % 3 == 0) || (start_num % 5 == 0))
 		{
-			sum += i;
+			total = total + start_num;
 		}
+		else
+		{
+			continue;
+		}
+
 	}
-	printf("%d\n", sum);
+	printf("%d", total);
+	printf("\n");
+
 	return (0);
 }

@@ -1,11 +1,14 @@
 #include "holberton.h"
+#include <stdlib.h>
+
 /**
-  * _abs - a function that computes absolute value
-  * @i: that's the number
-  *
-  * Return: abs
-  */
-int _abs(int i)
+ * _abs - prints te absolute value
+ * @n: input parameter
+ * Return: Always 0.
+ */
+
+int _abs(int n)
 {
-return  (i < 0 ? -i : i);
+	return (abs(n));
 }
+

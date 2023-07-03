@@ -1,10 +1,12 @@
 #include "holberton.h"
+
 /**
-  * main -program that prints Holberton
-  *
-  * Return: 0
-  *
-  */
+ * main - prints a word
+ *
+ * Description: just prints a statement
+ * Return: Always(0) Success
+ */
+
 int main(void)
 {
 	_putchar('H');
@@ -17,5 +19,6 @@ int main(void)
 	_putchar('o');
 	_putchar('n');
 	_putchar('\n');
-return (0);
+
+	return (0);
 }

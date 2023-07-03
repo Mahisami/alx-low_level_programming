@@ -1,11 +1,15 @@
 #include "holberton.h"
+
 /**
-  * add- adds two integers and returns the result
-  * @a: one of the #s
-  * @b: the other #
-  * Return:  result
-  */
+ * add - add two numbers from input
+ * @a: first aparamet
+ * @b: second parameter
+ *
+ * Description: adds two numbers
+ * Return: Always (0).
+ */
+
 int add(int a, int b)
 {
-return (a + b);
+	return (a + b);
 }
